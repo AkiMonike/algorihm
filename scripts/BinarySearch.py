@@ -17,7 +17,7 @@ def BinarySearch(array,item):
     end = length-1
 
     while start <= end :
-        mid = (start+end) / 2 #计算每次mid位置
+        mid = start + (end-start) / 2 #计算每次mid位置
         if array[mid] == item:
             return True
         elif item < array[mid]:
